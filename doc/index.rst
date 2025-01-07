@@ -10,5 +10,7 @@ Welcome to Example's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   some-feature.md
-   another-feature.md
+   Introduction.md
+   Algorithm.md
+   CodeLibrary.md
+   AvailableLibrary.md
