@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeLibrary &mdash; Example 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Available Library" href="AvailableLibrary.html" />
+    <link rel="prev" title="Algorithm" href="Algorithm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Example
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Algorithm.html">Algorithm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CodeLibrary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-representations">Data Representations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#high-precision-finite-field-library">High-Precision Finite Field Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-representation">Data Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiplication">multiplication</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#elliptic-curve-library">Elliptic Curve Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multi-scalar-multiplication-msm">Multi-Scalar Multiplication (MSM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#double-and-addition">Double and Addition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pippenger-algorithm">Pippenger Algorithm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AvailableLibrary.html">Available Library</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Example</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CodeLibrary</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/CodeLibrary.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="codelibrary">
+<h1>CodeLibrary<a class="headerlink" href="#codelibrary" title="Link to this heading"></a></h1>
+<section id="data-representations">
+<h2>Data Representations<a class="headerlink" href="#data-representations" title="Link to this heading"></a></h2>
+<p>PROVE represents each point on the BLS12-381 elliptic curve in the form of XYZZ, with four cordinates, each 384 bits in length.</p>
+</section>
+<section id="high-precision-finite-field-library">
+<h2>High-Precision Finite Field Library<a class="headerlink" href="#high-precision-finite-field-library" title="Link to this heading"></a></h2>
+<section id="data-representation">
+<h3>Data Representation<a class="headerlink" href="#data-representation" title="Link to this heading"></a></h3>
+<p>The high-precision data (e.g. 384-bit cordinate) will be decomposed into a vector of low-precision chunks, for which we term as <strong>Chunk Vector (CV)</strong> (I hope u like it once u first time sees its resume[CV] :P).</p>
+<p>For example, assuming choosing each chunk to have 16 bits, then a 384-bit scalar will be represented as a vector of 24 chunks.</p>
+</section>
+<section id="multiplication">
+<h3>multiplication<a class="headerlink" href="#multiplication" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="elliptic-curve-library">
+<h2>Elliptic Curve Library<a class="headerlink" href="#elliptic-curve-library" title="Link to this heading"></a></h2>
+<p>Exciting documentation in here.
+Let’s make a list (empty surrounding lines required):</p>
+</section>
+<section id="multi-scalar-multiplication-msm">
+<h2>Multi-Scalar Multiplication (MSM)<a class="headerlink" href="#multi-scalar-multiplication-msm" title="Link to this heading"></a></h2>
+<section id="double-and-addition">
+<h3>Double and Addition<a class="headerlink" href="#double-and-addition" title="Link to this heading"></a></h3>
+</section>
+<section id="pippenger-algorithm">
+<h3>Pippenger Algorithm<a class="headerlink" href="#pippenger-algorithm" title="Link to this heading"></a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Algorithm.html" class="btn btn-neutral float-left" title="Algorithm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="AvailableLibrary.html" class="btn btn-neutral float-right" title="Available Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright workshop participant.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
